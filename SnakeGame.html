@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="start-screen gg">
+      <h1>Snake Game</h1>
+      <button onclick="showGame()">O'yinni boshlash</button>
+      <button onclick="redirectToTelegram()" class="btnCo">
+        Contact To My Telegram
+      </button>
+    </div>
+    <div class="controls" style="display: none">
+      <p>Rejimni tanlang va o'ynang!</p>
+      <label for="difficulty">Qiyinchilik Turi:</label>
+      <select id="difficulty">
+        <option value="easy">Oson</option>
+        <option value="medium" selected>O'rtacha</option>
+        <option value="hard">Qiyin</option>
+      </select>
+      <button onclick="startGame()">O'ynash</button>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
