@@ -1,72 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: url(./img/BLUR.svg);
+  color: #fff;
 }
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .controls {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 button:hover {
-    background-color: #666;
+  background-color: #666;
 }
 .board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
-    position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  position: relative;
 }
 .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 .cell.taken {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 .win-line {
-    position: absolute;
-    width: 300px;
-    height: 5px;
-    background-color: red;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
+  position: absolute;
+  width: 300px;
+  height: 5px;
+  background-color: red;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
 }
 #status {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
