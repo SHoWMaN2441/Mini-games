@@ -1,122 +1,133 @@
 canvas {
-    border: 1px solid black;
-    display: none; 
-    margin: 20px auto;
-  }
-  body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #74ebd5, #acb6e5);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
-  h1 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  p {
-    font-size: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  .controls, .start-screen {
-    margin-bottom: 10px;
-  }
-  .controls label, .start-screen button {
-    font-size: 1.2rem;
-    margin-right: 10px;
-  }
-  select, button {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  button {
-    background-color: #4caf50;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
-  }
-  button:hover {
-    background-color: #45a049;
-  }
-  canvas {
-    border: 3px solid #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    background-color: #e8f9fd;
-  }
-  .gg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-  }
-  .btnCo{
-    background-color: #4caf50;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-  }
-  @media (max-width: 600px) {
-h1 {
-  font-size: 2rem;
-}
-
-p, label, button, select {
-  font-size: 0.9rem;
-}
-
-canvas {
-  width: 90%;
-  height: auto;
+  border: 1px solid black;
+  display: none;
   margin: 20px auto;
 }
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: url(./BLUR.svg);
+  background-size: cover;
 
-.gg {
-  margin-top: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
-
-.btnCo {
-  font-size: 0.9rem;
-  padding: 8px 15px;
-}
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-h1 {
-  font-size: 2.2rem;
-}
-
-p, label, button, select {
-  font-size: 1rem;
-}
-
-canvas {
-  width: 80%;
-  height: auto;
-  margin: 20px auto;
-}
-}
-@media (min-width: 1025px) {
 h1 {
   font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-
+p {
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.controls,
+.start-screen {
+  margin-bottom: 10px;
+}
+.controls label,
+.start-screen button {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+select,
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
+}
 canvas {
-  width: 400px;
-  height: 400px;
-  margin: 20px auto;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #e8f9fd;
 }
-
 .gg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 100px;
 }
+.btnCo {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p,
+  label,
+  button,
+  select {
+    font-size: 0.9rem;
+  }
+
+  canvas {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .gg {
+    margin-top: 50px;
+  }
+
+  .btnCo {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p,
+  label,
+  button,
+  select {
+    font-size: 1rem;
+  }
+
+  canvas {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  canvas {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+  }
+
+  .gg {
+    margin-top: 100px;
+  }
 }
