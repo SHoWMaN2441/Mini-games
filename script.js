@@ -25,6 +25,7 @@ function generateBoard(size) {
   }
 
   cardValues.sort(() => Math.random() - 0.5);
+  // let count=0
 
   cards = cardValues.map((value) => {
     const card = document.createElement("div");
